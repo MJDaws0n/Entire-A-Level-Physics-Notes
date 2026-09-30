@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Motion graph relationships</title>
+  <desc id="desc">Displacement-time gradient gives velocity, velocity-time gradient gives acceleration, and area under velocity-time gives displacement.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#52606d"/>
+    </marker>
+    <style>
+      .axis{stroke:#52606d;stroke-width:3;marker-end:url(#arrow)}
+      .curve{fill:none;stroke:#1769aa;stroke-width:5}
+      .shade{fill:#90caf9;opacity:.5}
+      .guide{stroke:#d1495b;stroke-width:3;stroke-dasharray:8 6}
+      text{font-family:system-ui,sans-serif;font-size:23px;fill:#17202a}
+      .title{font-size:27px;font-weight:700}
+      .small{font-size:19px}
+    </style>
+  </defs>
+  <rect width="960" height="520" rx="24" fill="#f7fafc"/>
+  <text class="title" x="115" y="54">displacement–time</text>
+  <line class="axis" x1="70" y1="420" x2="305" y2="420"/>
+  <line class="axis" x1="70" y1="420" x2="70" y2="95"/>
+  <path class="curve" d="M75 390 Q130 365 170 300 T295 120"/>
+  <line class="guide" x1="145" y1="338" x2="270" y2="164"/>
+  <text class="small" x="150" y="455">time</text>
+  <text class="small" x="93" y="115">s</text>
+  <text class="small" x="135" y="210">gradient = v</text>
+
+  <text class="title" x="393" y="54">velocity–time</text>
+  <line class="axis" x1="370" y1="420" x2="605" y2="420"/>
+  <line class="axis" x1="370" y1="420" x2="370" y2="95"/>
+  <path class="shade" d="M375 400 L590 145 L590 420 L375 420 Z"/>
+  <path class="curve" d="M375 400 L590 145"/>
+  <text class="small" x="445" y="455">time</text>
+  <text class="small" x="389" y="115">v</text>
+  <text class="small" x="432" y="220">gradient = a</text>
+  <text class="small" x="438" y="340">area = Δs</text>
+
+  <text class="title" x="728" y="54">acceleration–time</text>
+  <line class="axis" x1="680" y1="420" x2="915" y2="420"/>
+  <line class="axis" x1="680" y1="420" x2="680" y2="95"/>
+  <path class="curve" d="M685 205 L900 205"/>
+  <text class="small" x="755" y="455">time</text>
+  <text class="small" x="699" y="115">a</text>
+  <text class="small" x="730" y="185">constant acceleration</text>
+</svg>

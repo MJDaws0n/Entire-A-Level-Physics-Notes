@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Definition of one radian</title>
+  <desc id="desc">Two radii enclose an arc equal in length to the radius, so the central angle is one radian.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d1495b"/>
+    </marker>
+    <style>
+      .circle{fill:none;stroke:#8a99a8;stroke-width:3}
+      .radius{stroke:#1769aa;stroke-width:5}
+      .arc{fill:none;stroke:#d1495b;stroke-width:9}
+      .angle{fill:#90caf9;opacity:.45}
+      .measure{stroke:#d1495b;stroke-width:3;marker-start:url(#arrow);marker-end:url(#arrow)}
+      text{font-family:system-ui,sans-serif;font-size:26px;fill:#17202a}
+    </style>
+  </defs>
+  <rect width="720" height="520" rx="24" fill="#f7fafc"/>
+  <circle class="circle" cx="340" cy="270" r="190"/>
+  <path class="angle" d="M340 270 L530 270 A190 190 0 0 0 442.7 110.1 Z"/>
+  <line class="radius" x1="340" y1="270" x2="530" y2="270"/>
+  <line class="radius" x1="340" y1="270" x2="442.7" y2="110.1"/>
+  <path class="arc" d="M530 270 A190 190 0 0 0 442.7 110.1"/>
+  <circle cx="340" cy="270" r="7" fill="#17202a"/>
+  <text x="425" y="300">r</text>
+  <text x="372" y="178">r</text>
+  <text x="483" y="158" fill="#d1495b">arc s = r</text>
+  <text x="390" y="242">θ = 1 rad</text>
+  <text x="205" y="488">θ = s/r, so s = r gives θ = 1 radian</text>
+</svg>

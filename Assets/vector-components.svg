@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Resolving a vector into perpendicular components</title>
+  <desc id="desc">A vector F at angle theta above the horizontal, with horizontal component F cos theta and vertical component F sin theta.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="currentColor"/>
+    </marker>
+    <style>
+      .axis{stroke:#52606d;stroke-width:3;marker-end:url(#arrow)}
+      .main{stroke:#1769aa;stroke-width:6;marker-end:url(#arrow)}
+      .comp{stroke:#d1495b;stroke-width:4;stroke-dasharray:10 8;marker-end:url(#arrow)}
+      .arc{fill:none;stroke:#52606d;stroke-width:2}
+      text{font-family:system-ui,sans-serif;font-size:27px;fill:#17202a}
+      .small{font-size:23px}
+    </style>
+  </defs>
+  <rect width="800" height="520" rx="24" fill="#f7fafc"/>
+  <line class="axis" x1="110" y1="420" x2="710" y2="420"/>
+  <line class="axis" x1="110" y1="420" x2="110" y2="70"/>
+  <line class="main" x1="110" y1="420" x2="610" y2="150"/>
+  <line class="comp" x1="110" y1="420" x2="610" y2="420"/>
+  <line class="comp" x1="610" y1="420" x2="610" y2="150"/>
+  <path class="arc" d="M205 420 A95 95 0 0 0 194 375"/>
+  <text x="210" y="388">θ</text>
+  <text x="355" y="252" fill="#1769aa">F</text>
+  <text class="small" x="320" y="458">F cos θ</text>
+  <text class="small" x="627" y="300" transform="rotate(-90 627 300)">F sin θ</text>
+  <text class="small" x="690" y="458">x</text>
+  <text class="small" x="78" y="86">y</text>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+  <title id="title">Common A-level circuit symbols</title>
+  <desc id="desc">Symbols for a cell, battery, fixed and variable resistors, thermistor, LDR, lamp, diode, LED, ammeter and voltmeter.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d1495b"/>
+    </marker>
+    <style>
+      .wire{fill:none;stroke:#1769aa;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .mark{fill:none;stroke:#d1495b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .arrow{fill:none;stroke:#d1495b;stroke-width:3;marker-end:url(#arrow)}
+      text{font-family:system-ui,sans-serif;font-size:20px;fill:#17202a;text-anchor:middle}
+      .inside{font-size:28px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1000" height="500" rx="24" fill="#f7fafc"/>
+
+  <g transform="translate(0 0)">
+    <line class="wire" x1="30" y1="100" x2="80" y2="100"/>
+    <line class="mark" x1="80" y1="62" x2="80" y2="138"/>
+    <line class="mark" x1="103" y1="78" x2="103" y2="122"/>
+    <line class="wire" x1="103" y1="100" x2="170" y2="100"/>
+    <text x="100" y="190">cell</text>
+  </g>
+
+  <g transform="translate(200 0)">
+    <line class="wire" x1="20" y1="100" x2="55" y2="100"/>
+    <line class="mark" x1="55" y1="62" x2="55" y2="138"/>
+    <line class="mark" x1="78" y1="78" x2="78" y2="122"/>
+    <line class="mark" x1="108" y1="62" x2="108" y2="138"/>
+    <line class="mark" x1="131" y1="78" x2="131" y2="122"/>
+    <line class="wire" x1="131" y1="100" x2="175" y2="100"/>
+    <text x="100" y="190">battery</text>
+  </g>
+
+  <g transform="translate(400 0)">
+    <line class="wire" x1="20" y1="100" x2="55" y2="100"/>
+    <rect class="mark" x="55" y="75" width="90" height="50"/>
+    <line class="wire" x1="145" y1="100" x2="180" y2="100"/>
+    <text x="100" y="190">fixed resistor</text>
+  </g>
+
+  <g transform="translate(600 0)">
+    <line class="wire" x1="20" y1="100" x2="55" y2="100"/>
+    <rect class="mark" x="55" y="75" width="90" height="50"/>
+    <line class="wire" x1="145" y1="100" x2="180" y2="100"/>
+    <line class="arrow" x1="45" y1="145" x2="155" y2="48"/>
+    <text x="100" y="190">variable resistor</text>
+  </g>
+
+  <g transform="translate(800 0)">
+    <line class="wire" x1="20" y1="100" x2="55" y2="100"/>
+    <rect class="mark" x="55" y="75" width="90" height="50"/>
+    <line class="wire" x1="145" y1="100" x2="180" y2="100"/>
+    <path class="mark" d="M45 145 L155 48 M45 145 L70 145"/>
+    <text x="100" y="190">thermistor</text>
+  </g>
+
+  <g transform="translate(0 240)">
+    <line class="wire" x1="20" y1="100" x2="55" y2="100"/>
+    <rect class="mark" x="55" y="75" width="90" height="50"/>
+    <line class="wire" x1="145" y1="100" x2="180" y2="100"/>
+    <line class="arrow" x1="38" y1="45" x2="70" y2="70"/>
+    <text x="100" y="190">LDR</text>
+  </g>
+
+  <g transform="translate(200 240)">
+    <line class="wire" x1="20" y1="100" x2="62" y2="100"/>
+    <circle class="mark" cx="100" cy="100" r="38"/>
+    <path class="mark" d="M74 74 L126 126 M126 74 L74 126"/>
+    <line class="wire" x1="138" y1="100" x2="180" y2="100"/>
+    <text x="100" y="190">lamp</text>
+  </g>
+
+  <g transform="translate(400 240)">
+    <line class="wire" x1="20" y1="100" x2="65" y2="100"/>
+    <path class="mark" d="M65 65 L130 100 L65 135 Z M130 62 L130 138"/>
+    <line class="wire" x1="130" y1="100" x2="180" y2="100"/>
+    <text x="100" y="190">diode</text>
+  </g>
+
+  <g transform="translate(600 240)">
+    <line class="wire" x1="20" y1="100" x2="65" y2="100"/>
+    <path class="mark" d="M65 65 L130 100 L65 135 Z M130 62 L130 138"/>
+    <line class="wire" x1="130" y1="100" x2="180" y2="100"/>
+    <line class="arrow" x1="115" y1="62" x2="150" y2="28"/>
+    <line class="arrow" x1="135" y1="77" x2="170" y2="43"/>
+    <text x="100" y="190">LED</text>
+  </g>
+
+  <g transform="translate(800 240)">
+    <circle class="mark" cx="60" cy="100" r="35"/>
+    <circle class="mark" cx="140" cy="100" r="35"/>
+    <text class="inside" x="60" y="110">A</text>
+    <text class="inside" x="140" y="110">V</text>
+    <text x="100" y="190">ammeter · voltmeter</text>
+  </g>
+</svg>

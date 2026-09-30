@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-labelledby="title desc">
+  <title id="title">Progressive wave amplitude and wavelength</title>
+  <desc id="desc">A sinusoidal displacement-position graph with amplitude A and wavelength lambda labelled.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#d1495b"/>
+    </marker>
+    <style>
+      .axis{stroke:#52606d;stroke-width:3}
+      .wave{fill:none;stroke:#1769aa;stroke-width:6}
+      .measure{stroke:#d1495b;stroke-width:3;marker-start:url(#arrow);marker-end:url(#arrow)}
+      .guide{stroke:#8a99a8;stroke-width:2;stroke-dasharray:7 6}
+      text{font-family:system-ui,sans-serif;font-size:25px;fill:#17202a}
+      .small{font-size:21px}
+    </style>
+  </defs>
+  <rect width="900" height="460" rx="24" fill="#f7fafc"/>
+  <line class="axis" x1="70" y1="240" x2="840" y2="240"/>
+  <line class="axis" x1="90" y1="70" x2="90" y2="400"/>
+  <path class="wave" d="M90 240 C145 90 205 90 260 240 S375 390 430 240 S545 90 600 240 S715 390 770 240 S825 170 840 150"/>
+  <line class="guide" x1="175" y1="110" x2="175" y2="395"/>
+  <line class="guide" x1="515" y1="110" x2="515" y2="395"/>
+  <line class="measure" x1="175" y1="390" x2="515" y2="390"/>
+  <text x="335" y="425">λ</text>
+  <line class="measure" x1="115" y1="240" x2="115" y2="115"/>
+  <text x="127" y="185">A</text>
+  <text class="small" x="680" y="220">equilibrium</text>
+  <text class="small" x="795" y="270">position</text>
+  <text class="small" x="105" y="83">displacement</text>
+</svg>

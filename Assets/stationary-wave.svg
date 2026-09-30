@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">Nodes and antinodes in a stationary wave</title>
+  <desc id="desc">Three loops of a stationary wave, showing fixed nodes and maximum-displacement antinodes.</desc>
+  <style>
+    .axis{stroke:#7b8794;stroke-width:2;stroke-dasharray:8 7}
+    .wave1{fill:none;stroke:#1769aa;stroke-width:6}
+    .wave2{fill:none;stroke:#1769aa;stroke-width:4;opacity:.35}
+    .node{fill:#d1495b}
+    .anti{fill:#1769aa}
+    text{font-family:system-ui,sans-serif;font-size:24px;fill:#17202a}
+    .small{font-size:20px}
+  </style>
+  <rect width="960" height="430" rx="24" fill="#f7fafc"/>
+  <line class="axis" x1="80" y1="230" x2="880" y2="230"/>
+  <path class="wave1" d="M90 230 C155 75 245 75 310 230 C375 385 465 385 530 230 C595 75 685 75 750 230 C795 335 845 330 870 230"/>
+  <path class="wave2" d="M90 230 C155 385 245 385 310 230 C375 75 465 75 530 230 C595 385 685 385 750 230 C795 125 845 130 870 230"/>
+  <g class="node">
+    <circle cx="90" cy="230" r="8"/><circle cx="310" cy="230" r="8"/>
+    <circle cx="530" cy="230" r="8"/><circle cx="750" cy="230" r="8"/>
+    <circle cx="870" cy="230" r="8"/>
+  </g>
+  <g class="anti">
+    <circle cx="200" cy="114" r="8"/><circle cx="420" cy="346" r="8"/>
+    <circle cx="640" cy="114" r="8"/><circle cx="810" cy="305" r="8"/>
+  </g>
+  <text x="69" y="285">node</text>
+  <text x="154" y="80">antinode</text>
+  <text class="small" x="332" y="210">neighbouring loops are in antiphase</text>
+  <text class="small" x="362" y="405">no net energy transfer along the pattern</text>
+</svg>

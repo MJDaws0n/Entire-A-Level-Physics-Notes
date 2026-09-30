@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">Capacitor exponential discharge</title>
+  <desc id="desc">A normalised capacitor voltage falls exponentially to 0.37 of its initial value after one time constant.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#52606d"/>
+    </marker>
+    <style>
+      .axis{stroke:#52606d;stroke-width:3;marker-end:url(#arrow)}
+      .curve{fill:none;stroke:#1769aa;stroke-width:6}
+      .guide{stroke:#d1495b;stroke-width:3;stroke-dasharray:8 6}
+      text{font-family:system-ui,sans-serif;font-size:24px;fill:#17202a}
+      .small{font-size:20px}
+    </style>
+  </defs>
+  <rect width="900" height="500" rx="24" fill="#f7fafc"/>
+  <line class="axis" x1="100" y1="420" x2="825" y2="420"/>
+  <line class="axis" x1="100" y1="420" x2="100" y2="65"/>
+  <path class="curve" d="M105 90 C210 155 275 220 335 290 C430 365 560 405 800 418"/>
+  <line class="guide" x1="335" y1="290" x2="335" y2="420"/>
+  <line class="guide" x1="100" y1="290" x2="335" y2="290"/>
+  <circle cx="335" cy="290" r="8" fill="#d1495b"/>
+  <text x="62" y="98">1.0</text>
+  <text x="45" y="298">0.37</text>
+  <text x="322" y="455">1</text>
+  <text x="795" y="455">t/RC</text>
+  <text x="36" y="65">V/V<tspan baseline-shift="sub" font-size="17">0</tspan></text>
+  <text class="small" x="365" y="270">after one time constant, 37% remains</text>
+  <text x="505" y="115">V = V<tspan baseline-shift="sub" font-size="17">0</tspan>e<tspan baseline-shift="super" font-size="17">−t/RC</tspan></text>
+</svg>

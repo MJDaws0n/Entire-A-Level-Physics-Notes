@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img" aria-labelledby="title desc">
+  <title id="title">Electric field lines from positive to negative charge</title>
+  <desc id="desc">Field lines leave a positive charge and enter a negative charge; arrows show the force direction on a positive test charge.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1769aa"/>
+    </marker>
+    <style>
+      .line{fill:none;stroke:#1769aa;stroke-width:4;marker-mid:url(#arrow);marker-end:url(#arrow)}
+      .charge{stroke:#17202a;stroke-width:3}
+      text{font-family:system-ui,sans-serif;font-size:31px;font-weight:700;fill:white;text-anchor:middle}
+      .caption{font-size:21px;font-weight:400;fill:#17202a;text-anchor:start}
+    </style>
+  </defs>
+  <rect width="900" height="500" rx="24" fill="#f7fafc"/>
+  <circle class="charge" cx="235" cy="250" r="48" fill="#d1495b"/>
+  <circle class="charge" cx="665" cy="250" r="48" fill="#3f51b5"/>
+  <text x="235" y="261">+</text>
+  <text x="665" y="261">−</text>
+  <path class="line" d="M285 250 L450 250 L615 250"/>
+  <path class="line" d="M275 210 C390 95 510 95 625 210"/>
+  <path class="line" d="M275 290 C390 405 510 405 625 290"/>
+  <path class="line" d="M248 200 C290 48 610 48 652 200"/>
+  <path class="line" d="M248 300 C290 452 610 452 652 300"/>
+  <text class="caption" x="130" y="480">arrows show force on a positive test charge; closer lines mean stronger field</text>
+</svg>
